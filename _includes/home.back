@@ -7,8 +7,10 @@ layout: default
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  {{ include "../_includes/why.html"}}
+  {% include why.html %}
+
   
+
   {{ content }}
 
   {%- if site.posts.size > 3 -%}
