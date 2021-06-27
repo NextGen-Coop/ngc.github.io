@@ -21,6 +21,22 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://nextgen.coop" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username: NextGen-Coop
+theme_color: 174a9c
+
+# Collections
+collections_dir: collections
+
+# List of collections
+collections:
+  permalink: /:collection/:name
+  members:
+    output: false
+  governance:
+    output: false
+  portfolio:
+    output: true
+  services:
+    output: true
 
 # Build settings
 markdown: kramdown

@@ -1,0 +1,4 @@
+---
+name: App
+layout: page
+---
