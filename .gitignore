@@ -4,3 +4,4 @@ _site
 *-cache/
 Gemfile
 Gemfile.lock
+vendor

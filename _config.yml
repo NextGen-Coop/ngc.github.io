@@ -14,13 +14,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: NextGen Cooperative
-email: email.address@nextgen.coop
+email: howdy@nextgen.coop
 description: >- # this means to ignore newlines until "baseurl:"
   We are a 100% worker owned cooperative of professional software developers offering web and app development services. We also provide training for those who might be interested in any aspect of computer software.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://nextgen.coop" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: jekyllrb
+
 github_username: NextGen-Coop
+linkedin_username: nextgen-coop
 theme_color: 174a9c
 
 # Collections
@@ -28,7 +29,7 @@ collections_dir: collections
 
 # List of collections
 collections:
-  permalink: /:collection/:name
+  permalink: "/:collection/:name"
   members:
     output: false
   governance:
@@ -43,7 +44,6 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

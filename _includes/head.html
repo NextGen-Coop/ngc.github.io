@@ -8,35 +8,39 @@
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <title>
+    {% if page.title %}
+      {{ page.title | escape }}
+    {% else %}
+      {{ site.title | escape }}{% endif %}
+  </title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
-  <link rel="apple-touch-icon" sizes="57x57" href="assets/ico/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="assets/ico/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="assets/ico/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/ico/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="assets/ico/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="assets/ico/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="assets/ico/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="assets/ico/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/ico/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="assets/ico/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/ico/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/ico/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/ico/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="assets/ico/favicon.svg">
+  <link
+    rel="icon"
+    type="image/png"
+    href="assets/ico/favicon.png">
+  <link rel="manifest" href="/site.webmanifest">
   <meta name="msapplication-TileColor" content="#{{ site.theme_color }}">
-  <meta name="msapplication-TileImage" content="assets/ico/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="assets/ico/favicon.png">
   <meta name="theme-color" content="#{{ site.theme_color }}">
 
   <link rel="stylesheet" href="{{ "assets/css/base.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
-{% if site.rss %}
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-{% endif %}
+  {% if site.rss %}
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="{{ site.title | escape }}"
+      href="{{ "/feed.xml" | relative_url }}">
+  {% endif %}
 
-{% if jekyll.environment == 'production' and site.google_analytics %}
-  {% include google-analytics.html %}
-{% endif %}
+  {% if jekyll.environment == 'production' and site.google_analytics %}
+    {% include google-analytics.html %}
+  {% endif %}
 </head>
