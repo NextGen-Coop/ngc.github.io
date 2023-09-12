@@ -6,13 +6,32 @@
   <body>
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <h1>NextGenCoop</h1>
-        {% include ng-sunflower-development.svg %}
-        <h2>Homegrown Software</h2>
-        <p>Web applications, mobile apps, indie games.</p>
-        <p>Training and mentoring for the tech industry.</p>
-        <p>100% worker-owned business</p>
-        <p></p>
+        <section class="hero ">
+          <video
+            playsinline
+            autoplay
+            muted
+            loop
+            poster=""
+            id="hero-vid"
+            class="hero-vid">
+            <source src="/assets/vid/sunlit-forest.webm" type="video/webm">
+            <source src="/assets/vid/sunlit-forest.mp4" type="video/mp4">
+          </video>
+          <div class="hero-header">
+            {% include ng-sunflower-development.svg %}
+            <h1>NextGen Cooperative</h1>
+          </div>
+
+        </section>
+        <section class="content">
+          <div class="hero-content">
+            <h2>Homegrown Software</h2>
+            <p>Web applications, mobile apps, and maybe indie games.</p>
+            <p>Training and mentoring for the software industry.</p>
+            <p>100% worker-owned business.</p>
+          </div>
+        </section>
       </div>
     </main>
 

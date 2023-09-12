@@ -1,5 +1,6 @@
 ---
 ---
+
 $font_color: #080808
 $header_bg: rgb(171,205,239)
 $footer_bg: #616100
@@ -9,6 +10,8 @@ $author_bg: rgba(227, 242, 243, .75)
 $title_font: 'courier new', monospace
 $body_font: 'courier new', monospace
 $menu_font: 'Arial', 'Helvetica', sans-serif
+
+@import fonts
 
 html
   width: 100%
@@ -26,7 +29,32 @@ body
   color: $font_color
   font-weight: bold
   .wrapper
-    max-width: calc(960px + (30px / 2))
+    padding: 0
+    max-width: calc(1280px + (30px / 2))
+  section.hero
+    padding: 0
+    video
+      object-fit: cover
+      width: 100vw
+      height: 100vh
+      position: fixed
+      top: 0
+      left: 0
+    .hero-header
+      position: relative
+      height: 100vh
+      text-align: center
+      display: flex
+      align-items: center
+      justify-content: center
+      svg
+        max-width: 33vh
+      h1
+        font-family: $font-rosarivo
+        font-size: 4vw
+        -webkit-text-stroke: 1px black
+        color: white
+        text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
 
 svg#ng-sunflower
   display: block
