@@ -3,8 +3,8 @@
 
 $font_color: #080808
 $header_bg: rgb(171,205,239)
-$footer_bg: #616100
-$main_bg: #f5deb3
+$footer_bg: rgba(105, 57, 9, 0.9)
+$main_bg: #6e3808
 $nav_bg: #666666
 $author_bg: rgba(227, 242, 243, .75)
 $title_font: 'courier new', monospace
@@ -30,7 +30,8 @@ body
   font-weight: bold
   .wrapper
     padding: 0
-    max-width: calc(1280px + (30px / 2))
+    margin: 0
+    max-width: 100%
   section.hero
     padding: 0
     video
@@ -54,12 +55,34 @@ body
         font-size: 4vw
         -webkit-text-stroke: 1px black
         color: white
-        text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
+        text-shadow: 3px 3px 0 $footer_bg, -1px -1px 0 $footer_bg, 1px -1px 0 $footer_bg, -1px 1px 0 $footer_bg, 1px 1px 0 $footer_bg
+    .hero-content
+      background: rgba(black, 0.66)
+      color: white
+      position: relative
+      margin-bottom: -15px
+      padding: 5vw
+      text-align: center
+      h2
+        font-size: 3vw
+        text-shadow: 0 -3px 15px ivory
+      p
+        text-align: left
+        margin: 0 3vw
+        font-size: 1.5vw
+        padding-bottom: 3vh
+    footer
+      position: relative
+      background: $footer_bg
+      color: $font_color
+      padding: 2vh 4vw
+      box-shadow: 0px -3px 15px #ffedcc
 
 svg#ng-sunflower
   display: block
 
+.page-content
+  padding: 0
 footer
-  order: 3
   background: $footer_bg
   color: $font_color
