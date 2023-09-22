@@ -42,15 +42,24 @@ body
       top: 0
       left: 0
     .hero-header
-      position: relative
-      height: 100vh
+      position: -webkit-sticky
+      position: sticky
+      top: 0
+      min-height: .25vh
+      transition: 0.2s
       text-align: center
       display: flex
       align-items: center
       justify-content: center
       svg
         max-width: 33vh
+        position: -webkit-sticky
+        position: sticky
+        top: 0
       h1
+        position: -webkit-sticky
+        position: sticky
+        top: 0
         font-family: $font-rosarivo
         font-size: 4vw
         -webkit-text-stroke: 1px black
@@ -79,7 +88,6 @@ body
       box-shadow: 0px -3px 15px #ffedcc
 
 svg#ng-sunflower
-  display: block
 
 .page-content
   padding: 0
