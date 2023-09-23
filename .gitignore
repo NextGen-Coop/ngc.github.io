@@ -2,6 +2,5 @@
 _site
 .jekyll-metadata
 *-cache/
-Gemfile
-Gemfile.lock
 vendor
+assets/vid/*.mov
