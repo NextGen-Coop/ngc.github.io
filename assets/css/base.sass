@@ -13,6 +13,22 @@ $menu_font: 'Arial', 'Helvetica', sans-serif
 
 @import fonts
 
+@keyframes sticky-header
+  from
+    height: 100vh
+    font-size: calc(4vw + 1em)
+    padding-top: 0
+  to
+    background-color: rgba(129, 145, 38, 1)
+    height: 10vh
+    font-size: 2em
+
+@keyframes resize-logo
+  from
+    width: 25vh
+  to
+    width: 10vh
+
 html
   width: 100%
   margin: 0
@@ -42,45 +58,47 @@ body
       top: 0
       left: 0
     .hero-header
-      position: -webkit-sticky
-      position: sticky
+      width: 100vw
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%)
+      position: fixed
       top: 0
-      min-height: .25vh
-      transition: 0.2s
+      animation: sticky-header linear forwards
+      animation-timeline: scroll()
+      animation-range: 0vh 90vh
       text-align: center
       display: flex
       align-items: center
       justify-content: center
+      z-index: 99
       svg
-        max-width: 33vh
-        position: -webkit-sticky
-        position: sticky
-        top: 0
+        // width: 33vh
+        animation: resize-logo linear forwards
+        animation-timeline: scroll()
+        animation-range: 0vh 90vh
       h1
-        position: -webkit-sticky
-        position: sticky
-        top: 0
+        margin-top: 1.5vh
         font-family: $font-rosarivo
-        font-size: 4vw
         -webkit-text-stroke: 1px black
         color: white
         text-shadow: 3px 3px 0 $footer_bg, -1px -1px 0 $footer_bg, 1px -1px 0 $footer_bg, -1px 1px 0 $footer_bg, 1px 1px 0 $footer_bg
     .hero-content
+      margin-top: 100vh
+      z-index: 1
+      //clip-path: polygon(0 10vh, 100% 10vh, 100% 100%, 0 100%)
+      position: relative
       background: rgba(black, 0.66)
       color: white
-      position: relative
-      margin-bottom: -15px
-      padding: 5vw
       text-align: center
       h2
-        font-size: 3vw
+        font-size: 4vw
         text-shadow: 0 -3px 15px ivory
       p
         text-align: left
         margin: 0 3vw
-        font-size: 1.5vw
+        font-size: 2.5vw
         padding-bottom: 3vh
     footer
+      z-index: 2
       position: relative
       background: $footer_bg
       color: $font_color
