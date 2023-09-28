@@ -63,18 +63,17 @@ body
       position: fixed
       top: 0
       animation: sticky-header linear forwards
+      animation-range: 0 90vh
       animation-timeline: scroll()
-      animation-range: 0vh 90vh
       text-align: center
       display: flex
       align-items: center
       justify-content: center
       z-index: 99
       svg
-        // width: 33vh
         animation: resize-logo linear forwards
+        animation-range: 0 90vh
         animation-timeline: scroll()
-        animation-range: 0vh 90vh
       h1
         margin-top: 1.5vh
         font-family: $font-rosarivo
@@ -84,7 +83,6 @@ body
     .hero-content
       margin-top: 100vh
       z-index: 1
-      //clip-path: polygon(0 10vh, 100% 10vh, 100% 100%, 0 100%)
       position: relative
       background: rgba(black, 0.66)
       color: white
