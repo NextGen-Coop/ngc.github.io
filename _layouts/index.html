@@ -3,22 +3,10 @@
 
   {% include head.html %}
 
-  <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
   <body>
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <section class="hero ">
-          <video
-            playsinline
-            autoplay
-            muted
-            loop
-            poster=""
-            id="hero-vid"
-            class="hero-vid">
-            <source src="/assets/vid/sunlit-forest.webm" type="video/webm">
-            <source src="/assets/vid/sunlit-forest.mp4" type="video/mp4">
-          </video>
           <div class="hero-header">
             {% include ng-sunflower-development.svg %}
             <h1>NextGen Cooperative</h1>
@@ -37,11 +25,11 @@
               <p>NextGen is a 100% worker owned business. There are no bosses or shareholders, and we'll train a ChatGPT bot to be the CEO because an AI has no reason to want a yacht. We are community driven and community oriented, and the bottom line doesn't matter except in the sense that it's raised, overall, for everybody involved. It'll be fun to fire an AI CEO in Discord at least.</p>
             </div>
           </div>
-          {% include footer.html %}
+
         </section>
       </div>
     </main>
-
+    {% include footer.html %}
   </body>
 
 </html>

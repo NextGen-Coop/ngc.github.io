@@ -21,6 +21,7 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://nextgen.coop" # the base hostname & protocol for your site, e.g. http://example.com
 
 github_username: NextGen-Coop
+discord_link: 3WEPJYwdcS
 linkedin_username: nextgen-coop
 theme_color: 174a9c
 
