@@ -32,7 +32,13 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy 2023 NextGen Cooperative LLC</p>
+      <p class="fine-print">&copy {{ "now" | date: "%Y" }} NextGen Cooperative LLC</p>
+      <p class="finer-print">Last build:
+        <a href="{{ site.github.repository_url }}" target="_blank">
+          {{ site.github.build_revision | truncate: 8 }}
+        </a>
+        {{ "now" | date: "%Y-%m-%d at %R:%M%z" }}
+      </p>
     </div>
   </div>
 </footer>

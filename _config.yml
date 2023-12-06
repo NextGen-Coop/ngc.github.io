@@ -19,6 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   We are a 100% worker owned cooperative of professional software developers offering web and app development services. We also provide training for those who might be interested in any aspect of computer software.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://nextgen.coop" # the base hostname & protocol for your site, e.g. http://example.com
+repository: NextGen-Coop/ngc.github.io
 
 github_username: NextGen-Coop
 discord_link: 3WEPJYwdcS
