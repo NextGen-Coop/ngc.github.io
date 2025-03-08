@@ -34,3 +34,5 @@ gem "webrick", "~> 1.8"
 group :jekyll_plugins do
   gem 'jekyll-remote-include', :github => 'netrics/jekyll-remote-include'
 end
+
+gem "json", "~> 2.7"
