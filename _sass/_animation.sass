@@ -1,0 +1,36 @@
+---
+---
+
+@keyframes shrink-header
+  from
+    //background: $background_url no-repeat center/cover
+    height: 100vh
+    font-size: calc(2vw + 1em)
+    padding-top: 0
+  to
+    //background: $background_url no-repeat center/cover
+    height: 10vh
+    font-size: 2em
+
+@keyframes resize-logo
+  from
+    width: 25vh
+  to
+    width: 10vh
+
+body
+  section-hero
+    .hero-header
+      animation: shrink-header .666s linear forwards
+      animation-play-state: paused
+      animation-delay: calc(var(--scroll) * -1s)
+      animation-iteration-count: 1
+      animation-fill-mode: both
+      height: 100vh
+      svg
+        width: 25vh
+        animation: resize-logo .666s linear forwards
+        animation-play-state: paused
+        animation-delay: calc(var(--scroll) * -1s)
+        animation-iteration-count: 1
+        animation-fill-mode: both
