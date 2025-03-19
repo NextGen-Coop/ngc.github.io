@@ -1,6 +1,17 @@
 <header class="site-header" role="banner">
   <div class="wrapper">
-    {% assign default_paths = site.pages | map: "path" %} {% assign page_paths = site.header_pages | default: default_paths %} {% include nav.html paths=page_paths %}
-    <h1>{{ site.title | escape }}</h1>
+    <div class="logo">
+      <a href="/">{% include workerbee-logo.svg %}</a>
+    </div>
+    <div class="title">
+      <h1>
+        <a href="/">{{ site.title | escape }}</a>
+      </h1>
+      <h2>{{ site.slogan | escape }}</h2>
+    </div>
+    <div class="nav">
+      {% assign default_paths = site.pages | map: "path" %} {% assign page_paths = site.header_pages | default: default_paths %}
+      {% include nav.html paths=page_paths %}
+    </div>
   </div>
 </header>

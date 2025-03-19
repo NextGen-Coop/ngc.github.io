@@ -4,47 +4,14 @@
   {% include head.html %}
 
   <body>
+    {% include header.html %}
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <section class="hero ">
-          <div class="hero-header">
-            {% include ng-sunflower-development.svg %}
-            <h1>NextGen Cooperative</h1>
-          </div>
-          <div class="hero-content">
-            <div>
-              <p>Homegrown Software</p>
-              <p>
-                WorkerBee specializes in web and mobile sites, but there's not much we can't do.
-                Our developers are experts in their field and command a wide range of skills.
-                We can create a completely customized solution tailored to your specific needs.
-                Which is something that the design templates website builders use can't do for you.
-                Not only that, but we won't reinvent the wheel. We utilize free open source technology to save us time and you money.
-                Give us your idea, and together we can make it a reality. 
-              </p>
-            </div>
-            <div>
-              <p>No Queens, No Keepers</p> 
-              <p>
-                WorkerBee is a worker cooperative which is an ownership structure where our workers are our owners.
-                No outside shareholders who wouldn't know what DNS is even if we spelled it out for them.
-                No C-level executives pushing profits over people. Just our workers making sure everyone's voices are heard.
-                By taking care of our workers at every level, we can guarantee quality work from workers who are just as dedicated to your project as you are.
-                Which is why choosing WorkerBee to carry your project is the right choice. We want you to succeed because your success is our success.
-              </p>
-            </div>
-            <div>
-              <p>Bringing It All Back</p>
-              <p>
-                We also strive to be a company you can be heartened to work with by giving back to our community.
-                Traditional boot camps and college courses are expensive and gatekeep tech education from low income areas.
-                For students with the drive to learn we want to offer training to get them to the highest industry standard, equipment they may not otherwise be able to afford to get them started, and the opportunity to work with seasoned professionals already in the industry to get their professional careers started. Our community projects don’t just end with our workers.
-                We are planning on hosting computer literacy courses to teach our communities how to learn and teach themselves.
-                Supporting us is supporting Tennessee.
-              </p>
-            </div>
-          </div>
-
+        <h3>Welcome to the Hive</h3>
+        <section class="content">
+          {% include homegrown-software.html %}
+          {% include no-queens-no-keepers.html %}
+          {% include bringing-it-all-back.html %}
         </section>
       </div>
     </main>
