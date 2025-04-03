@@ -1,0 +1,67 @@
+.site-header
+	border-bottom: none
+	border-top: none
+
+header
+	display: flex
+	.header-wrapper
+		background-color: $header_bg
+		display: flex
+		flex: 0 0 100%
+		flex-direction: row
+		flex-flow: row wrap
+		min-height: 150px
+		h3
+			text-align: center
+			font-size: 2rem
+			font-weight: bold
+		.logo
+			text-align: center
+			svg
+				float: left
+				max-width: 75px
+				max-height: 75px
+			img
+				max-height: 75px
+				padding-top: 5px
+		.page-heading
+			color: $header_color
+		.header-col
+			width: 100%
+			@media only screen and (min-width: 1000px)
+				width: 32%
+			.header-col-1
+				order: 2
+				margin-top: 50px
+				@media only screen and (min-width: 500px)
+					margin-top: 0px
+				@media only screen and (min-width: 1000px)
+					order: 1
+			.header-col-2
+				order: 3
+				@media only screen and (min-width: 1000px)
+					order: 2
+			.header-col-3
+				order: 1
+				@media only screen and (min-width: 1000px)
+					order: 3
+		.title
+			float: left
+			h1
+				padding-top: 10px
+				font-family: $header_font
+				font-weight: bold
+				font-size: 2rem
+				text-align: justify
+				a
+					color: $header_color
+					&:hover
+						text-decoration: none
+						color: $header_hover_color
+			h2
+				margin-top: -30px
+				text-align: center
+				font-weight: bold
+				font-size: 1rem
+		.nav
+			float: right

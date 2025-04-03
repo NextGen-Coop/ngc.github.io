@@ -2,6 +2,10 @@
 ---
 @import fonts
 @import colors
+@import nav
+@import header
+@import footer
+@import about
 
 html
   width: 100%
@@ -19,99 +23,10 @@ body
   .wrapper
     padding: 0
     margin: 0
-    max-width: 100vw
+    max-width: 100%
     footer
       z-index: 2
       position: relative
       background: $footer_bg
       color: $font_color
       padding: 2vh 4vw
-
-.site-nav
-  background-color: rgba(0, 0, 0, 0)
-  border: none
-  max-height: 10vw
-  svg
-    position: relative
-    z-index: 100
-    width: 20vw
-    max-height: 10vw
-    visibility: hidden
-
-.page-content
-  padding: 0
-
-.site-header
-  border-bottom: none
-
-header
-  .wrapper
-    max-height: 10vw
-    .logo
-      float: left
-    .title
-      float: left
-      h1
-        padding-top: 1vw
-        font-family: $header_font
-        font-weight: bold
-        font-size: 3em
-        a
-          color: $header_color
-          &:hover
-            text-decoration: none
-            color: $header_hover_color
-      h2
-        margin-top: -1vw
-        text-align: center
-        font-weight: bold
-        font-size: 1.5em
-    .nav
-      float: right
-
-main
-  .wrapper
-    h3
-      text-align: center
-      font-size: 2.5vw
-    .content
-      margin: 0 auto
-      width: 80%
-      display: flex
-      align-items: flex-start
-    .content-block
-      width: 33%
-      margin: 0 1vw
-      h4
-        text-align: center
-        font-size: 1.5vw
-
-footer
-  background: $footer_bg
-  color: $font_color
-
-.site-footer
-  padding: 30px 3%
-  box-shadow: 0px -3px 15px #ffedcc
-  color: $author_bg
-  a
-    color: $author_bg
-    text-decoration: none
-    svg
-      fill: $author_bg
-      max-width: 18px
-      vertical-align: baseline
-    &:hover
-      color: white
-      text-decoration: none
-  ul.social-media-list
-    li
-      span
-        display: inline-block
-        margin-top: 1px
-  .footer-bottom
-    text-align: center
-    .fine-print
-      font-size: smaller
-    .finer-print
-      font-size: x-small

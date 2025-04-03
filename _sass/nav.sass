@@ -1,0 +1,18 @@
+.site-nav
+	background-color: rgba(0, 0, 0, 0)
+	border: none
+	max-height: 10vw
+	svg
+		position: relative
+		z-index: 100
+		width: 20vw
+		max-height: 10vw
+		visibility: visible
+		@media screen and (max-width: 1000px)
+			position: absolute
+			top: 9px
+			right: 15px
+			border-radius: 5px
+			text-align: right
+		@media only screen and (min-width: 1000px)
+			visibility: hidden
