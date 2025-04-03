@@ -1,8 +1,6 @@
 ---
-layout: page
+layout: about
 title: About
 permalink: /about/
 menu: true
 ---
-
-under construction
