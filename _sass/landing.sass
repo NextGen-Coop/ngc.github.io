@@ -23,11 +23,7 @@
                         width: 55%
                         display: flex
                         flex-direction: column
-                        @media screen and (min-width: 600px)
-                            display: flex
-                            flex-direction: row
-                            justify-content: center
-                            align-items: center
+                        flex-wrap: wrap
                         @media screen and (min-width: 768px)
                             display: flex
                             flex-direction: column
@@ -78,11 +74,12 @@
                             display: flex
                             flex-direction: column
                             align-items: center
-                            @media screen and (min-width: 768px)
+                            @media screen and (min-width: 1000px)
                                 flex-direction: row
                                 justify-content: space-between
+                                z-index: 1
                             .feature
-                                width: 33%
+                                width: 100%
                                 text-align: center
                                 justify-content: center
                                 align-items: center
@@ -98,13 +95,15 @@
                         @media screen and (max-width: 768px)
                             display: none
 
-
 .offer
+
     background: $header_bg
     padding: 0 10vw
     .offer-heading
+        position: relative
         display: flex
         justify-content: space-between
+        width: 100%
         padding: 4rem 0
         @media screen and (max-width: 768px)
             flex-direction: column
@@ -112,11 +111,20 @@
         .offer-title
             font-size: 2rem
             font-family: $title_font
+            @media screen and (min-width: 600px)
+                font-size: 2.5rem
+            @media screen and (min-width: 768px)
+                font-size: 3rem
+            @media screen and (min-width: 1000px)
+                font-size: 3.5rem
         .img-wrapper
-            height: 150px
-            width: 150px
+            height: 50%
+            display: flex
+            justify-content: right
             @media screen and (max-width: 600px)
-                    display: none
+                display: none
+            .offer-img
+                width: 50%
     .container
         display: flex
         flex-direction: column
@@ -143,6 +151,7 @@
         .right-text
             font-size: 1rem
             font-weight: normal
+            z-index: 1
             @media screen and (min-width:600px)
                 font-size: 1.25rem
             @media screen and (min-width:768px)
@@ -151,7 +160,6 @@
                 font-size: 1.75rem
             @media screen and (min-width: 1200px)
                 width: 50%
-
 
 .mindset
     background: $header_bg
