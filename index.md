@@ -4,6 +4,6 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: index
 ---
-Communicate.
-Collaborate.
-Cooperate.
+{% include get-started.html %}
+{% include what-we-offer.html %}
+{% include cooperative-mindset.html %}
