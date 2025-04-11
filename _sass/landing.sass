@@ -4,147 +4,209 @@
         width: 100%
         .content
             width: 100%
+            font-family: $body_font
             .content-block
                 width: 100%
                 margin: 0
                 .landing
                     width: 100%
                     display: flex
-                    flex-direction: row
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    @media only screen and (min-width: 768px)
+                        display: flex
+                        flex-direction: row
                     .landing-content
                         margin: 0 auto
                         padding: 0 10vw
                         width: 55%
+                        display: flex
+                        flex-direction: column
+                        @media screen and (min-width: 600px)
+                            display: flex
+                            flex-direction: row
+                            justify-content: center
+                            align-items: center
+                        @media screen and (min-width: 768px)
+                            display: flex
+                            flex-direction: column
                         .landing-title
                             max-width: 100%
                             text-align: left
-                            font-size: 3rem
-                            font-family: $body_font
+                            font-size: 1.75rem
                             font-weight: normal
                             color: $landing_text
+                            @media only screen and (min-width: 600px)
+                                font-size: 2rem
+                            @media only screen and (min-width: 768px)
+                                font-size: 2.5rem
+                            @media only screen and (min-width: 1000px)
+                                font-size: 3rem
                         .landing-para
                             text-align: left
-                            font-size: 2rem
-                            font-family: $body_font
+                            font-size: 1rem
                             font-weight: normal
                             color: $landing_text
+                            @media only screen and (min-width: 600px)
+                                font-size: 1.125rem
+                            @media only screen and (min-width: 768px)
+                                font-size: 1.3rem
+                            @media only screen and (min-width: 1000px)
+                                font-size: 1.5rem
                         .landing-button
-                            margin: 0.5rem auto
+                            margin: 2rem auto
                             padding: 1vh 2vw
                             background: $header_bg
                             color: $landing_text
-                            font-size: 2rem
-                            font-family: $body_font
+                            font-size: 1rem
                             text-align: center
                             border-radius: 100px
                             text-decoration: none
                             border: none
                             width: 100%
+                            cursor: pointer
+                            @media screen and (min-width: 600px)
+                                font-size: 1.125rem
+                            @media screen and (min-width: 768px)
+                                font-size: 1.3rem
+                            @media screen and (min-width: 1000px)
+                                font-size: 1.5rem
                         .features
                             margin: 0 auto
                             width: 100%
                             display: flex
+                            flex-direction: column
                             align-items: center
-                            justify-content: space-between
+                            @media screen and (min-width: 768px)
+                                flex-direction: row
+                                justify-content: space-between
                             .feature
                                 width: 33%
                                 text-align: center
                                 justify-content: center
                                 align-items: center
                                 display: flex
-                                .feature-icon
-                                    height: 64px
-                                    width: 64px
                                 .feature-text
                                     width: 100%
                                     font-size: 12px
-                                    font-family: $body_font
                                     font-weight: normal
                                     color: $landing_text
                                     text-align: left
-                                    @media only screen and (min-width: 600px)
-                                        font-size: 1.5rem
-                                    @media only screen and (min-width: 768px)
-                                        font-size: 1.5rem
-                                    @media only screen and (min-width: 1000px)
-                                        font-size: 1rem
                     .landing-img
-                        width: 40%
+                        width: 45%
+                        @media screen and (max-width: 768px)
+                            display: none
 
-.main-content
-    .main-wrapper
-        .content
-            .content-block
-                width: 100%
-                .offer
-                    height: 100vh
-                    background: $header_bg
-                    padding: 0 10vw
-                    .offer-heading
-                        display: flex
-                        padding: 4rem 0
-                        .offer-title
-                            font-size: 5rem
-                            font-family: $title_font
-                    .container
-                        display: flex
-                        flex-direction: row
-                        padding: 4rem 0
-                        width: 100%
-                        .left-text
-                            width: 55%
-                            font-size: 2rem
-                            font-family: $body_font
-                            color: $landing_bg
-                            font-weight: normal
-                            padding-right: 4rem
-                        .right-text
-                            width: 40%
-                            font-size: 2rem
-                            font-family: $body_font
-                            color: $landing_bg
-                            font-weight: normal
 
-.main-content
-    .main-wrapper
-        .content
-            .content-block
-                width: 100%
-                .mindset
-                    height: 100vh
-                    background: $header_bg
-                    padding: 0 6vw
-                    .mindset-heading
-                        display: flex
-                        padding: 4rem 0
-                        .mindset-title
-                            font-size: 4.5rem
-                            font-family: $title_font
-                            font-weight: normal
-                            color: $landing_bg
-                            width: 50%
-                        .header-text
-                            width: 50%
-                            padding-top: 16px
-                            font-size: 1.25rem
-                            font-family: $body_font
-                            color: $landing_bg
-                            font-weight: normal
-                            line-height: 2rem
-                            text-align: right
-                    .container
-                        display: flex
-                        flex-direction: row
-                        .text-left
-                            width: 50%
-                            font-size: 1.5rem
-                            font-family: $body_font
-                            color: $landing_bg
-                            font-weight: normal
-                            padding: 0 1rem
-                        .text-right
-                            width: 50%
-                            font-size: 1.5rem
-                            font-family: $body_font
-                            color: $landing_bg
-                            font-weight: normal
+.offer
+    background: $header_bg
+    padding: 0 10vw
+    .offer-heading
+        display: flex
+        justify-content: space-between
+        padding: 4rem 0
+        @media screen and (max-width: 768px)
+            flex-direction: column
+            align-items: center
+        .offer-title
+            font-size: 2rem
+            font-family: $title_font
+        .img-wrapper
+            height: 150px
+            width: 150px
+            @media screen and (max-width: 600px)
+                    display: none
+    .container
+        display: flex
+        flex-direction: column
+        padding: 4rem 0
+        width: 100%
+        font-family: $body_font
+        color: $landing_bg
+        @media screen and (min-width: 1200px)
+            flex-direction: row
+        .left-text
+            font-size: 1rem
+            font-weight: normal
+            padding-bottom: 2rem
+            @media screen and (min-width:600px)
+                font-size: 1.25rem
+            @media screen and (min-width:768px)
+                font-size: 1.5rem
+            @media screen and (min-width:1000px)
+                font-size: 1.75rem
+            @media screen and (min-width: 1200px)
+                width: 50%
+                padding-bottom: 0
+                padding-right: 4rem
+        .right-text
+            font-size: 1rem
+            font-weight: normal
+            @media screen and (min-width:600px)
+                font-size: 1.25rem
+            @media screen and (min-width:768px)
+                font-size: 1.5rem
+            @media screen and (min-width:1000px)
+                font-size: 1.75rem
+            @media screen and (min-width: 1200px)
+                width: 50%
+
+
+.mindset
+    background: $header_bg
+    padding: 0 6vw 50px 6vw
+    color: $landing_bg
+    .mindset-heading
+        display: flex
+        flex-direction: column
+        padding: 4rem 0
+        @media screen and (min-width: 1200px)
+            flex-direction: row
+        .mindset-title
+            font-size: 1.25rem
+            font-family: $title_font
+            font-weight: normal
+            @media screen and (min-width: 600px)
+                font-size: 2rem
+            @media screen and (min-width: 768px)
+                font-size: 2.5rem
+            @media screen and (min-width: 1200px)
+                font-size: 3.5rem
+        .header-text
+            padding-top: 16px
+            font-size: 1rem
+            font-weight: normal
+            @media screen and (min-width: 600px)
+                font-size: 1.125rem
+            @media screen and (min-width: 768px)
+                font-size: 1.3rem
+            @media screen and (min-width: 1200px)
+                font-size: 1.6rem
+                text-align: right
+                width: 45%
+    .container
+        display: flex
+        flex-direction: column
+        @media screen and (min-width: 1200px)
+            flex-direction: row
+        .text-left
+            font-size: 1rem
+            font-weight: normal
+            padding: 0 0 1rem
+            @media screen and (min-width:600px)
+                font-size: 1.125rem
+                padding: 0 2rem 0 0
+            @media screen and (min-width:768px)
+                font-size: 1.3rem
+            @media screen and (min-width:1000px)
+                font-size: 1.6rem
+        .text-right
+            font-size: 1rem
+            font-weight: normal
+            @media screen and (min-width:600px)
+                font-size: 1.125rem
+            @media screen and (min-width:768px)
+                font-size: 1.3rem
+            @media screen and (min-width:1000px)
+                font-size: 1.5rem
