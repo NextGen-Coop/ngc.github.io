@@ -6,3 +6,4 @@ menu: true
 ---
 {% include about-page-1.html %}
 {% include about-page-2.html %}
+{% include about-page-3.html %}

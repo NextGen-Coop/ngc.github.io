@@ -11,6 +11,7 @@ main
 				flex-wrap: wrap
 				margin: 0 auto
 				width: 80%
+				margin-bottom: 50px
 				.content-block
 					margin: 0 1vw
 					padding-bottom: 50px
@@ -29,11 +30,11 @@ main
 					font-size: 1.5rem
 					font-weight: 400
 					@media only screen and (min-width: 1000px)
-						font-size: 1.875rem
+						font-size: 1.5rem
 			.flower-flair-container
 				width: 100%
 				position: absolute
-				top: 45%
+				top: 40%
 				.flower-flair-left
 					text-align: center
 					float: left
@@ -47,6 +48,36 @@ main
 					max-width: 275px
 					max-height: 275px
 					z-index: -1
-						
+				.bee-flair
+					rotate: 20deg
+				@media only screen and (max-width: 600px)
+					.flower-flair-left
+						visibility: hidden
+					.flower-flair-right
+						visibility: hidden
+			.content-left
+				display: flex
+				align-items: center
+				flex-wrap: wrap
+				width: 50%
+				@media only screen and (max-width: 768px)
+					display: none
+					visibility: hidden
+			.content-right
+				display: flex
+				align-items: center
+				align-content: flex-start
+				flex-wrap: wrap
+				width: 50%
+				@media only screen and (max-width: 768px)
+					width: 100%
+			.content-center
+				text-align: center
+			.quote-statement
+				width: 100%
+				font-size: 1rem
+				padding: 40px 40px 0 40px
+			.semi-bold
+				font-weight: 600
 .page-content
 	padding: 0
