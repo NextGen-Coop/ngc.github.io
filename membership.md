@@ -2,7 +2,7 @@
 layout: page
 title: Membership
 permalink: /membership/
-menu: true
+menu: false
 ---
 
 There are many benefits to being a member of NextGen Cooperative.
