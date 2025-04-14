@@ -2,7 +2,7 @@
 layout: page
 title: Contact
 permalink: /contact/
-menu: true
+menu: false
 ---
 
 under construction
