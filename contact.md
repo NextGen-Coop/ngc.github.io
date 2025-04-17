@@ -2,7 +2,7 @@
 layout: page
 title: Contact
 permalink: /contact/
-menu: false
+menu: true
 ---
-
-under construction
+{% include contact-heading.html %}
+{% include contact-page.html %}
