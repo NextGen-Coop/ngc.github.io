@@ -25,35 +25,66 @@
     <div class="contact-form">
       <form action="https://getform.io/f/akkywwxa" method="POST">
         <div class="contact-info">
-          <div>
-          Email: <input type="email" name="email" required>
-          </div>
-          <div>
-          Full Name: <input type="text" name="name" required>
-          </div>
+          <div>Email: <input type="email" name="email" placeholder="JDoe24@example.com" required /></div>
+          <div>Full Name: <input type="text" name="name" placeholder="John Doe" required /></div>
+          <div>Phone: <input type="tel" name="phone" placeholder="Optional"></div>
         </div>
         <div class="company-info">
           <div class="info">
-            Tell us more about your company!
-            <textarea type="text" name="message" placeholder="(Optional) What industry are you based in? What technologies do you work with? What is the name of your company and how large is it?" ></textarea>
+            Company Name:
+            <input type="text" name="message" placeholder="Optional" />
           </div>
+          <div class="info">
+            Company Size:
+            <input type="text" name="message" placeholder="Optional" />
+          </div>
+          <div class="info">
+            Company Industry:
+            <input type="text" name="message" placeholder="Optional" />
+          </div>
+          <div class="info">
+            Company Technologies:
+            <textarea
+              type="text"
+              name="message"
+              placeholder="Optional"
+            ></textarea>
+          </div>
+        </div>
+        <div class="project-info">
           <div class="info">
             What are your current challenges?
-            <textarea type="text" name="message" placeholder="Please write a short summary of your needs to help us better prepare for our meeting. If applicable, please provide examples of similar projects or design guidelines." required></textarea>
+            <textarea
+              type="text"
+              name="message"
+              placeholder="Please write a short summary of your needs to help us better prepare for our meeting. If applicable, please provide examples of similar projects or design guidelines."
+              required
+            ></textarea>
           </div>
           <div class="info">
-            When would you like to finish this project?
-            <textarea type="text" name="message" placeholder="What is your projected timeline for this project?" required></textarea>
+            When would you like this finished by?
+            <input
+              type="text"
+              name="message"
+              placeholder="What is your projected timeline for this project?"
+              required
+            />
           </div>
           <div class="info">
             Estimated budget for this project?
-            <textarea type="text" name="message" placeholder="Provide an estimation of your budget to assist us in understanding the scope of your project." required></textarea>
+            <textarea
+              type="text"
+              name="message"
+              placeholder="Provide an estimation of your budget to assist us in understanding the scope of your project."
+              required
+            ></textarea>
           </div>
         </div>
-          
-        <!-- add hidden Honeypot input to prevent spams -->
         <button type="submit">Send</button>
-    </form>
+      </form>
     </div>
+  </div>
+</div>
+
   </div>
 </div>
