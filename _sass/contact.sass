@@ -5,19 +5,6 @@ main
             padding: 0
             .content-block
                 width: 100%
-                .contact-header
-                    position: relative
-                    background: #7a5f33
-                    color: $author_bg
-                    font-family: $title_font
-                    font-size: 2.5rem
-                    font-weight: normal
-                    display: flex
-                    justify-content: center
-                    align-items: center
-                    text-align: center
-                    width: 100%
-                    height: 100px
                 .page
                     display: flex
                     flex-direction: row
@@ -42,19 +29,85 @@ main
                         form
                             display: flex
                             flex-direction: column
-                            justify-content: space-between
+                            justify-content: space-around
                             height: 100%
+                            font-family: $body_font
                             .contact-info
                                 display: flex
                                 justify-content: space-around
                             .company-info
-                                height: 100%
+                                height: 30%
                                 display: flex
-                                flex-direction: column
-                                justify-content: space-between
+                                flex-direction: row
+                                flex-wrap: wrap
                                 .info
                                     display: flex
                                     flex-direction: column
-                                    padding: 10px 0
+                                    width: 50%
+                                    padding: 10px 0 0 0
+                                    input
+                                        height: 24px
+                                        margin-right: 32px
                                     textarea
-                                        height: 100px
+                                        height: 24px
+                                        margin-right: 32px
+                            .project-info
+                                display: flex
+                                flex-direction: column
+                                justify-content: center
+                                align-items: center
+                                align-text: left
+                                .info
+                                    display: flex
+                                    flex-direction: column
+                                    margin-bottom: 16px
+                                    width: 100%
+                                    input
+                                        height: 24px
+                                        width: 100%
+                                        margin-top: 8px
+                                    textarea
+                                        height: 48px
+                                        width: 100%
+                                        margin-top: 8px
+                            button
+                                background: $footer_bg
+                                color: $landing_bg
+                                border: none
+                                border-radius: 50px
+                                padding: 10px 20px
+                                font-family: $title_font
+                                font-size: 1.5rem
+                                font-weight: bold
+                                letter-spacing: 0.1rem
+                                cursor: pointer
+                                &:hover
+                                    background: #553c1591
+                                    color: $footer_bg
+
+.contact-header
+    background: $footer_bg
+    color: $landing_bg
+    min-height: 100px
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    .contact-wrapper
+        width: 100%
+        max-width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        text-align: center
+        .left
+            transform: scaleX(-1)
+        img
+            width: 100px
+            height: 100px
+        h4
+            font-family: $title_font
+            font-size: 2rem
+            font-weight: bold
+            letter-spacing: 0.1rem
+            color: $landing_bg
