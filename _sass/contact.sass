@@ -7,50 +7,81 @@ main
                 width: 100%
                 .page
                     display: flex
-                    flex-direction: row
+                    flex-direction: column
                     background: #dd94b0
                     padding: 50px 0 50px 0
+                    @media screen and (min-width: 1000px)
+                        display: flex
+                        flex-direction: row
                     .contact-text
-                        width: 50%
-                        margin: 0 25px 0 75px
+                        margin: 0 25px
                         font-family: $body_font
-                        font-size: 1.5rem
+                        font-size: .75rem
                         line-height: 1.5
                         color: $landing_bg
                         text-align: left
+                        margin-bottom: 2rem
+                        @media screen and (min-width: 1000px)
+                            width: 50%
+                            margin: 0 25px 0 75px
+                            font-size: 1rem
+                        @media screen and (min-width: 1250px)
+                            width: 50%
+                            margin: 0 25px 0 75px
+                            font-size: 1.5rem
                         .contact-para
-                            margin-bottom: 2rem
+                            margin-bottom: 1rem
+                            @media screen and (min-width: 1000px)
+                                margin-bottom: 2rem
                     .contact-form
-                        width: 50%
                         background: $landing_bg
-                        margin: 0 75px 0 25px
+                        margin-left: 0 25px
                         border-radius: 50px
                         padding: 2rem
+                        font-family: $body_font
+                        font-size: .75rem
+                        @media screen and (min-width: 1000px)
+                            width: 50%
+                            margin: 0 75px 0 25px
+                            font-size: 1rem
                         form
                             display: flex
                             flex-direction: column
                             justify-content: space-around
                             height: 100%
-                            font-family: $body_font
                             .contact-info
                                 display: flex
                                 justify-content: space-around
-                            .company-info
-                                height: 30%
-                                display: flex
-                                flex-direction: row
-                                flex-wrap: wrap
+                                flex-direction: column
+                                @media screen and (min-width: 1000px)
+                                    flex-direction: row
+                                    justify-content: space-between
                                 .info
                                     display: flex
                                     flex-direction: column
-                                    width: 50%
-                                    padding: 10px 0 0 0
+                                    margin-bottom: 16px
+                                    @media screen and (min-width: 1000px)
+                                        width: 30%
+                                        
+                            .company-info
+                                display: flex
+                                flex-direction: column
+                                @media screen and (min-width: 1000px)
+                                    height: 30%
+                                    display: flex
+                                    flex-direction: row
+                                    flex-wrap: wrap
+                                .info
+                                    display: flex
+                                    flex-direction: column
+                                    margin-bottom: 16px
+                                    @media screen and (min-width: 1000px)
+                                        width: 50%
+                                        padding-top: 10px
                                     input
-                                        height: 24px
-                                        margin-right: 32px
-                                    textarea
-                                        height: 24px
-                                        margin-right: 32px
+                                        @media screen and (min-width: 1000px)
+                                            height: 24px
+                                            margin-right: 32px
                             .project-info
                                 display: flex
                                 flex-direction: column
@@ -65,11 +96,9 @@ main
                                     input
                                         height: 24px
                                         width: 100%
-                                        margin-top: 8px
                                     textarea
                                         height: 48px
                                         width: 100%
-                                        margin-top: 8px
                             button
                                 background: $footer_bg
                                 color: $landing_bg
@@ -103,11 +132,11 @@ main
         .left
             transform: scaleX(-1)
         img
-            width: 100px
-            height: 100px
+            width: 75px
+            height: 75px
         h4
             font-family: $title_font
-            font-size: 2rem
+            font-size: 1.5rem
             font-weight: bold
             letter-spacing: 0.1rem
             color: $landing_bg
