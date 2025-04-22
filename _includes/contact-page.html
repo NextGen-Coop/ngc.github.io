@@ -25,36 +25,74 @@
     <div class="contact-form">
       <form action="https://getform.io/f/akkywwxa" method="POST">
         <div class="contact-info">
-          <div class="info">Email: <input type="email" name="email" placeholder="JDoe24@example.com" required /></div>
-          <div class="info">Full Name: <input type="text" name="name" placeholder="John Doe" required /></div>
-          <div class="info">Phone: (Optional) <input type="tel" name="phone" placeholder="(xxx)-xxx-xxxx"></div>
+          <div class="info">
+            First Name:
+            <input
+              id="firstName"
+              type="text"
+              name="name"
+              placeholder="John"
+              required
+            />
+          </div>
+          <div class="info">
+            Last Name:
+            <input
+              id="lastName"
+              type="text"
+              name="name"
+              placeholder="Doe"
+              required
+            />
+          </div>
+          <div class="info">
+            Email:
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="JDoe24@example.com"
+              required
+            />
+          </div>
+          <div class="info">
+            Phone: (Optional)
+            <input
+              id="phoneNumber"
+              type="tel"
+              name="phone"
+              placeholder="(xxx)-xxx-xxxx"
+            />
+          </div>
         </div>
         <div class="company-info">
           <div class="info">
             Company Name: (Optional)
-            <input type="text" name="message" placeholder="" />
+            <input id="companyName" type="text" name="message" placeholder="" />
           </div>
           <div class="info">
             Company Size: (Optional)
-            <input type="text" name="message" placeholder="" />
+            <input id="companySize" type="text" name="message" placeholder="" />
           </div>
           <div class="info">
             Company Industry: (Optional)
-            <input type="text" name="message" placeholder="" />
-          </div>
-          <div class="info">
-            Company Technologies: (Optional)
             <input
+              id="companyIndustry"
               type="text"
               name="message"
               placeholder=""
-            >
+            />
+          </div>
+          <div class="info">
+            Company Technologies: (Optional)
+            <input id="companyTech" type="text" name="message" placeholder="" />
           </div>
         </div>
         <div class="project-info">
           <div class="info">
             What are your current challenges?
             <textarea
+              id="summary"
               type="text"
               name="message"
               placeholder="Please write a short summary of your needs to help us better prepare for our meeting. If applicable, please provide examples of similar projects or design guidelines."
@@ -64,6 +102,7 @@
           <div class="info">
             When would you like this finished by?
             <input
+              id="timeline"
               type="text"
               name="message"
               placeholder="What is your projected timeline for this project?"
@@ -73,11 +112,12 @@
           <div class="info">
             Estimated budget for this project?
             <input
+              id="budget"
               type="text"
               name="message"
               placeholder="Provide an estimation of your budget to assist us in understanding the scope of your project."
               required
-            >
+            />
           </div>
         </div>
         <button type="submit">Send</button>
