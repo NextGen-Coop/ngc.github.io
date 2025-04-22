@@ -35,7 +35,7 @@ main
                                 margin-bottom: 2rem
                     .contact-form
                         background: $landing_bg
-                        margin-left: 0 25px
+                        margin: 0 25px
                         border-radius: 50px
                         padding: 2rem
                         font-family: $body_font
@@ -104,12 +104,16 @@ main
                                 color: $landing_bg
                                 border: none
                                 border-radius: 50px
-                                padding: 10px 20px
+                                padding: 5px 10px
                                 font-family: $title_font
-                                font-size: 1.5rem
+                                font-size: 1rem
                                 font-weight: bold
                                 letter-spacing: 0.1rem
                                 cursor: pointer
+                                @media screen and (min-width: 1000px)
+                                    font-size: 1.5rem
+                                    letter-spacing: 0.1rem
+                                    padding: 10px 20px
                                 &:hover
                                     background: #553c1591
                                     color: $footer_bg
