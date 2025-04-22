@@ -51,7 +51,8 @@ main
                             height: 100%
                             .contact-info
                                 display: flex
-                                justify-content: space-around
+                                flex-wrap: wrap
+                                justify-content: space-between
                                 flex-direction: column
                                 @media screen and (min-width: 1000px)
                                     flex-direction: row
@@ -61,8 +62,9 @@ main
                                     flex-direction: column
                                     margin-bottom: 16px
                                     @media screen and (min-width: 1000px)
-                                        width: 30%
-                                        
+                                        width: 50%
+                                    input
+                                        width: 75%
                             .company-info
                                 display: flex
                                 flex-direction: column
