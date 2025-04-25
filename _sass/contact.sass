@@ -11,12 +11,11 @@ main
                     background: #dd94b0
                     padding: 50px 0 50px 0
                     @media screen and (min-width: 1000px)
-                        display: flex
                         flex-direction: row
                     .contact-text
                         margin: 0 25px
                         font-family: $body_font
-                        font-size: .75rem
+                        font-size: 1rem
                         line-height: 1.5
                         color: $landing_bg
                         text-align: left
@@ -24,8 +23,8 @@ main
                         @media screen and (min-width: 1000px)
                             width: 50%
                             margin: 0 25px 0 75px
-                            font-size: 1rem
-                        @media screen and (min-width: 1250px)
+                            font-size: 1.25rem
+                        @media screen and (min-width: 1400px)
                             width: 50%
                             margin: 0 25px 0 75px
                             font-size: 1.5rem
@@ -54,36 +53,38 @@ main
                                 flex-wrap: wrap
                                 justify-content: space-between
                                 flex-direction: column
-                                @media screen and (min-width: 1000px)
+                                @media screen and (min-width: 600px)
                                     flex-direction: row
-                                    justify-content: space-between
+                                // @media screen and (min-width: 1000px)
+                                //     flex-direction: row
+                                //     justify-content: space-between
                                 .info
                                     display: flex
                                     flex-direction: column
                                     margin-bottom: 16px
-                                    @media screen and (min-width: 1000px)
+                                    @media screen and (min-width: 600px)
                                         width: 50%
                                     input
                                         width: 75%
                             .company-info
                                 display: flex
                                 flex-direction: column
-                                @media screen and (min-width: 1000px)
+                                @media screen and (min-width: 600px)
                                     height: 30%
-                                    display: flex
                                     flex-direction: row
                                     flex-wrap: wrap
                                 .info
                                     display: flex
                                     flex-direction: column
                                     margin-bottom: 16px
-                                    @media screen and (min-width: 1000px)
+                                    @media screen and (min-width: 600px)
                                         width: 50%
                                         padding-top: 10px
                                     input
-                                        @media screen and (min-width: 1000px)
-                                            height: 24px
+                                        @media screen and (min-width: 600px)
                                             margin-right: 32px
+                                        @media screen and (min-width: 1350px)
+                                            height: 24px
                             .project-info
                                 display: flex
                                 flex-direction: column
@@ -108,13 +109,13 @@ main
                                 border-radius: 50px
                                 padding: 5px 10px
                                 font-family: $title_font
-                                font-size: 1rem
+                                font-size: 1.25rem
                                 font-weight: bold
                                 letter-spacing: 0.1rem
                                 cursor: pointer
                                 @media screen and (min-width: 1000px)
                                     font-size: 1.5rem
-                                    letter-spacing: 0.1rem
+                                    letter-spacing: 0.15rem
                                     padding: 10px 20px
                                 &:hover
                                     background: #553c1591
